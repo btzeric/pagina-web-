@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CORTINEX Hospitality — Cortineros para hoteles</title>
+<meta name="description" content="Diseñamos y fabricamos cortineros técnicos y decorativos para hoteles de gama media y alta: rieles motorizados, sistemas manuales silenciosos, blackout técnico y cortinas decorativas a medida.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Sprite de iconos SVG reutilizables (estilo outline, sin emojis) -->
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden;">
+  <defs>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-ruler" viewBox="0 0 24 24"><path d="M3 15l6-6 12 12-6 6-12-12z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M8 12l1.5 1.5M11 9l1.5 1.5M14 6l1.5 1.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+    <symbol id="icon-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 3v2.2M12 18.8V21M21 12h-2.2M5.2 12H3M18.4 5.6l-1.55 1.55M7.15 16.85L5.6 18.4M18.4 18.4l-1.55-1.55M7.15 7.15L5.6 5.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+    <symbol id="icon-headset" viewBox="0 0 24 24"><path d="M4 13v-1a8 8 0 0116 0v1" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><rect x="3" y="13" width="4" height="6" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.4"/><rect x="17" y="13" width="4" height="6" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M19 19v.5a3 3 0 01-3 3h-2.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+    <symbol id="icon-track" viewBox="0 0 24 24"><path d="M3 6h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M6 6v3.5M10 6v5.5M14 6v3.5M18 6v5.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+    <symbol id="icon-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 01-12 0c0-4.5 6-11 6-11z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-wave" viewBox="0 0 24 24"><path d="M3 9c2 0 2 2 4 2s2-2 4-2 2 2 4 2 2-2 4-2 2 2 4 2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M3 15c2 0 2 2 4 2s2-2 4-2 2 2 4 2 2-2 4-2 2 2 4 2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+    <symbol id="icon-motor" viewBox="0 0 24 24"><rect x="3" y="9" width="12" height="6" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M15 11h2.5L21 8v8l-3.5-3H15" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4 6.5l8 6.2 8-6.2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M6.6 3.5l3 1.3-1.3 3.1c1 2.3 2.7 4 5 5l3.1-1.3 1.3 3-2.8 2c-4.6-.3-9-4.7-9.3-9.3l2-2.8z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 105 9.5C5 14.8 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header" id="site-header">
+  <div class="wrap header-inner">
+    <a href="#inicio" class="brand" aria-label="CORTINEX Hospitality, inicio">
+      <span class="brand-mark" aria-hidden="true"></span>
+      CORTINEX <span class="brand-sub">Hospitality</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Por qué nosotros</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto" class="nav-cta">Solicitar cotización</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
+      <svg class="icon icon-open" width="24" height="24"><use href="#icon-menu"/></svg>
+      <svg class="icon icon-close" width="24" height="24"><use href="#icon-close"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 400 600" preserveAspectRatio="xMidYMid slice" class="pleats">
+        <defs>
+          <linearGradient id="pleatGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#1C1917"/>
+            <stop offset="100%" stop-color="#3a332e"/>
+          </linearGradient>
+        </defs>
+        <g class="pleat-group">
+          <!-- pliegues de cortina generados como curvas, no una foto -->
+          <path d="M0,0 C20,300 -10,300 10,600 L60,600 C40,300 70,300 50,0 Z" fill="url(#pleatGrad)" opacity="0.9"/>
+          <path d="M60,0 C80,300 50,300 70,600 L120,600 C100,300 130,300 110,0 Z" fill="url(#pleatGrad)" opacity="0.75"/>
+          <path d="M120,0 C140,300 110,300 130,600 L180,600 C160,300 190,300 170,0 Z" fill="url(#pleatGrad)" opacity="0.6"/>
+          <path d="M180,0 C200,300 170,300 190,600 L240,600 C220,300 250,300 230,0 Z" fill="url(#pleatGrad)" opacity="0.45"/>
+          <path d="M240,0 C260,300 230,300 250,600 L300,600 C280,300 310,300 290,0 Z" fill="url(#pleatGrad)" opacity="0.3"/>
+          <path d="M300,0 C320,300 290,300 310,600 L360,600 C340,300 370,300 350,0 Z" fill="url(#pleatGrad)" opacity="0.18"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Fabricación técnica de cortineros para hotelería</p>
+      <h1>Cortineros que visten cada habitación con la precisión de un hotel de gama alta.</h1>
+      <p class="hero-lead">Diseñamos, fabricamos e instalamos sistemas de rieles y cortinaje —motorizados, manuales y técnicos— a la medida de cada proyecto hotelero. Materiales certificados, silencio operativo y un acabado que sostiene la experiencia que su marca promete.</p>
+      <div class="hero-actions">
+        <a href="#contacto" class="btn btn-primary">Solicitar cotización <svg class="icon" width="18" height="18"><use href="#icon-arrow"/></svg></a>
+        <a href="#productos" class="btn btn-ghost">Ver soluciones</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRUEBA / CIFRAS -->
+  <section class="stats-band" aria-label="Cifras de la empresa">
+    <div class="wrap stats-grid">
+      <div class="stat" data-count="12">
+        <span class="stat-number"><span class="count">0</span>+</span>
+        <span class="stat-label">años de experiencia</span>
+      </div>
+      <div class="stat" data-count="180">
+        <span class="stat-number"><span class="count">0</span>+</span>
+        <span class="stat-label">habitaciones equipadas</span>
+      </div>
+      <div class="stat" data-count="5">
+        <span class="stat-number"><span class="count">0</span></span>
+        <span class="stat-label">años de garantía</span>
+      </div>
+      <div class="stat" data-count="98">
+        <span class="stat-number"><span class="count">0</span>%</span>
+        <span class="stat-label">entregas a tiempo</span>
+      </div>
+    </div>
+    <p class="stats-note">* Cifras de referencia — reemplazar por los datos reales de la empresa antes de publicar.</p>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section class="section" id="productos">
+    <div class="wrap">
+      <p class="eyebrow center">Soluciones</p>
+      <h2 class="section-title center">Un sistema de cortinaje para cada tipo de habitación</h2>
+      <p class="section-lead center">Cuatro líneas de producto pensadas para el ritmo de operación de un hotel: instalación rápida, mantenimiento mínimo y un movimiento silencioso que no interrumpe el descanso del huésped.</p>
+
+      <div class="grid grid-4 reveal-stagger">
+        <article class="card">
+          <span class="card-icon"><svg width="26" height="26"><use href="#icon-motor"/></svg></span>
+          <h3>Rieles motorizados</h3>
+          <p>Automatización silenciosa integrable con los sistemas de control de habitación (BMS / KNX) del hotel.</p>
+        </article>
+        <article class="card">
+          <span class="card-icon"><svg width="26" height="26"><use href="#icon-track"/></svg></span>
+          <h3>Rieles manuales silenciosos</h3>
+          <p>Sistemas de deslizamiento de bajo mantenimiento, con carros de nylon reforzado para uso intensivo.</p>
+        </article>
+        <article class="card">
+          <span class="card-icon"><svg width="26" height="26"><use href="#icon-drop"/></svg></span>
+          <h3>Blackout técnico</h3>
+          <p>Oscurecimiento total certificado, ideal para huéspedes con cambios de horario y turismo de descanso.</p>
+        </article>
+        <article class="card">
+          <span class="card-icon"><svg width="26" height="26"><use href="#icon-wave"/></svg></span>
+          <h3>Cortina decorativa</h3>
+          <p>Visillos y telas decorativas a medida, alineadas con el concept de interiorismo de cada propiedad.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ NOSOTROS -->
+  <section class="section section-dark" id="nosotros">
+    <div class="wrap">
+      <p class="eyebrow center on-dark">Por qué nosotros</p>
+      <h2 class="section-title center on-dark">Pensado para hoteles que no pueden darse el lujo de fallar</h2>
+
+      <div class="grid grid-4 reveal-stagger">
+        <div class="feature">
+          <span class="card-icon on-dark"><svg width="24" height="24"><use href="#icon-shield"/></svg></span>
+          <h3>Materiales certificados</h3>
+          <p>Telas y componentes con certificación ignífuga para cumplir la normativa hotelera vigente.</p>
+        </div>
+        <div class="feature">
+          <span class="card-icon on-dark"><svg width="24" height="24"><use href="#icon-ruler"/></svg></span>
+          <h3>Diseño a medida</h3>
+          <p>Levantamiento en sitio y fabricación por habitación tipo, sin soluciones genéricas de catálogo.</p>
+        </div>
+        <div class="feature">
+          <span class="card-icon on-dark"><svg width="24" height="24"><use href="#icon-gear"/></svg></span>
+          <h3>Instalación profesional</h3>
+          <p>Equipos propios de instalación, con cronogramas compatibles con la ocupación del hotel.</p>
+        </div>
+        <div class="feature">
+          <span class="card-icon on-dark"><svg width="24" height="24"><use href="#icon-headset"/></svg></span>
+          <h3>Soporte post-venta</h3>
+          <p>Garantía extendida y mantenimiento preventivo para maximizar la vida útil del sistema.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="section" id="proceso">
+    <div class="wrap">
+      <p class="eyebrow center">Proceso</p>
+      <h2 class="section-title center">De la primera visita a la habitación terminada</h2>
+
+      <ol class="process reveal-stagger">
+        <li class="process-step">
+          <span class="process-number">01</span>
+          <h3>Consulta y medición</h3>
+          <p>Visitamos el hotel, relevamos habitaciones tipo y entendemos los requisitos operativos.</p>
+        </li>
+        <li class="process-step">
+          <span class="process-number">02</span>
+          <h3>Diseño y muestras</h3>
+          <p>Proponemos sistema, tejido y acabado; enviamos muestras físicas para aprobación.</p>
+        </li>
+        <li class="process-step">
+          <span class="process-number">03</span>
+          <h3>Fabricación</h3>
+          <p>Producción a medida bajo control de calidad, con plazos definidos por volumen de habitaciones.</p>
+        </li>
+        <li class="process-step">
+          <span class="process-number">04</span>
+          <h3>Instalación y entrega</h3>
+          <p>Montaje coordinado con el equipo de mantenimiento del hotel y acta de entrega final.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- PROYECTOS / GALERÍA -->
+  <section class="section" id="proyectos">
+    <div class="wrap">
+      <p class="eyebrow center">Proyectos</p>
+      <h2 class="section-title center">Pensado para distintos formatos de propiedad</h2>
+      <p class="section-lead center">
+        Espacio reservado para fotografía real de proyectos entregados. Reemplace cada panel por una foto del hotel/habitación correspondiente cuando esté disponible.
+      </p>
+
+      <div class="grid grid-4 gallery reveal-stagger">
+        <!-- Reemplazar cada .gallery-item por <img src="ruta-real.jpg" alt="descripción del proyecto"> -->
+        <figure class="gallery-item tone-a">
+          <figcaption>Hotel boutique</figcaption>
+        </figure>
+        <figure class="gallery-item tone-b">
+          <figcaption>Resort de playa</figcaption>
+        </figure>
+        <figure class="gallery-item tone-c">
+          <figcaption>Hotel de negocios</figcaption>
+        </figure>
+        <figure class="gallery-item tone-d">
+          <figcaption>Suite premium</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="section section-muted">
+    <div class="wrap">
+      <p class="eyebrow center">Testimonios</p>
+      <h2 class="section-title center">Ejemplo de cómo presentar la voz de sus clientes</h2>
+      <p class="section-lead center">Textos de muestra — sustituir por citas reales de clientes antes de publicar el sitio.</p>
+
+      <div class="grid grid-3 reveal-stagger">
+        <blockquote class="testimonial">
+          <p>“El sistema motorizado redujo notablemente las quejas por ruido durante la noche y se integró sin problemas con nuestro control de habitación.”</p>
+          <cite>Gerencia de Operaciones — hotel boutique (cita de muestra)</cite>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>“El acabado y la caída de la tela estuvieron a la altura del reposicionamiento de marca que buscábamos en la renovación.”</p>
+          <cite>Dirección de Diseño — cadena hotelera (cita de muestra)</cite>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>“La instalación se coordinó por bloques de piso sin afectar la ocupación del hotel durante la obra.”</p>
+          <cite>Jefatura de Mantenimiento — resort (cita de muestra)</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA + CONTACTO -->
+  <section class="section cta-section" id="contacto">
+    <div class="wrap cta-grid">
+      <div class="cta-copy">
+        <p class="eyebrow">Hablemos de su proyecto</p>
+        <h2 class="section-title">Cuéntenos cuántas habitaciones tiene su hotel</h2>
+        <p class="section-lead">Respondemos en menos de 48 horas hábiles con una propuesta preliminar de sistema y tiempos de fabricación.</p>
+
+        <ul class="contact-list">
+          <li><svg class="icon" width="18" height="18"><use href="#icon-mail"/></svg> contacto@cortinex.example</li>
+          <li><svg class="icon" width="18" height="18"><use href="#icon-phone"/></svg> +52 55 0000 0000</li>
+          <li><svg class="icon" width="18" height="18"><use href="#icon-pin"/></svg> Ciudad de México, México</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-row" role="alert" id="form-summary" tabindex="-1" hidden>
+          <h3 id="form-summary-title">Revise los siguientes campos</h3>
+          <ul id="form-summary-list"></ul>
+        </div>
+
+        <div class="field">
+          <label for="f-name">Nombre completo</label>
+          <input type="text" id="f-name" name="name" required autocomplete="name" aria-describedby="f-name-error">
+          <p class="field-error" id="f-name-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-hotel">Hotel / Empresa</label>
+          <input type="text" id="f-hotel" name="hotel" required autocomplete="organization" aria-describedby="f-hotel-error">
+          <p class="field-error" id="f-hotel-error"></p>
+        </div>
+
+        <div class="field-group">
+          <div class="field">
+            <label for="f-email">Correo electrónico</label>
+            <input type="email" id="f-email" name="email" required autocomplete="email" aria-describedby="f-email-error">
+            <p class="field-error" id="f-email-error"></p>
+          </div>
+          <div class="field">
+            <label for="f-phone">Teléfono</label>
+            <input type="tel" id="f-phone" name="phone" autocomplete="tel" aria-describedby="f-phone-error">
+            <p class="field-error" id="f-phone-error"></p>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="f-rooms">Número aproximado de habitaciones</label>
+          <input type="number" id="f-rooms" name="rooms" min="1" inputmode="numeric" aria-describedby="f-rooms-error">
+          <p class="field-error" id="f-rooms-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-message">Mensaje</label>
+          <textarea id="f-message" name="message" rows="4" required aria-describedby="f-message-error"></textarea>
+          <p class="field-error" id="f-message-error"></p>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">
+          <span class="btn-label">Enviar solicitud</span>
+          <span class="btn-spinner" aria-hidden="true"></span>
+        </button>
+        <p class="form-success" id="form-success" role="status" hidden>Gracias — recibimos su solicitud y le responderemos a la brevedad.</p>
+        <p class="form-note">Este formulario aún no está conectado a un backend/servicio de correo. Antes de publicar, intégrelo con su proveedor de envío (por ejemplo, un endpoint propio o un servicio como Formspree).</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      CORTINEX <span class="brand-sub">Hospitality</span>
+      <p>Cortineros técnicos y decorativos para hotelería de gama media y alta.</p>
+    </div>
+    <nav aria-label="Navegación de pie de página">
+      <ul>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Por qué nosotros</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© <span id="year"></span> CORTINEX Hospitality. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
