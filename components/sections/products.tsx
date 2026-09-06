@@ -31,7 +31,7 @@ export function Products() {
         <p className="text-center uppercase tracking-[0.16em] text-[0.78rem] font-semibold text-[#A16207] mb-4">
           Soluciones
         </p>
-        <h2 className="text-center font-[family-name:var(--font-display)] font-semibold text-[clamp(1.6rem,3vw,2.3rem)] mb-4">
+        <h2 className="text-center text-[#0C0A09] font-[family-name:var(--font-display)] font-semibold text-[clamp(1.6rem,3vw,2.3rem)] mb-4">
           Un sistema de cortinaje para cada tipo de habitación
         </h2>
         <p className="text-center text-[#57534E] max-w-[640px] mx-auto mb-16">
@@ -46,7 +46,7 @@ export function Products() {
                 <span className="inline-flex items-center justify-center w-[52px] h-[52px] rounded-full bg-[#F1ECE3] text-[#A16207] mb-4">
                   <p.icon width={26} height={26} />
                 </span>
-                <h3 className="text-[1.15rem] font-[family-name:var(--font-display)] font-semibold mb-2">{p.title}</h3>
+                <h3 className="text-[#0C0A09] text-[1.15rem] font-[family-name:var(--font-display)] font-semibold mb-2">{p.title}</h3>
                 <p className="text-[0.92rem] text-[#57534E]">{p.body}</p>
               </article>
             </Reveal>

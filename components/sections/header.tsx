@@ -20,7 +20,7 @@ export function Header() {
         <a
           href="#inicio"
           aria-label="CORTINEX Hospitality, inicio"
-          className="flex items-center gap-2 font-[family-name:var(--font-display)] text-[1.35rem] font-semibold tracking-[0.02em] cursor-pointer"
+          className="flex items-center gap-2 text-[#0C0A09] font-[family-name:var(--font-display)] text-[1.35rem] font-semibold tracking-[0.02em] cursor-pointer"
         >
           <span aria-hidden="true" className="inline-block w-3.5 h-[26px] rounded-sm bg-linear-to-b from-[#A16207] to-[#1C1917]" />
           CORTINEX{" "}

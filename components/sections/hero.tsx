@@ -28,7 +28,7 @@ export function Hero() {
           <p className="uppercase tracking-[0.16em] text-[0.78rem] font-semibold text-[#A16207] mb-4">
             Fabricación técnica de cortineros para hotelería
           </p>
-          <h1 className="font-[family-name:var(--font-display)] font-semibold text-[clamp(2.1rem,4.4vw,3.4rem)] leading-[1.15] mb-6">
+          <h1 className="text-white font-[family-name:var(--font-display)] font-semibold text-[clamp(2.1rem,4.4vw,3.4rem)] leading-[1.15] mb-6">
             Cortineros que visten cada habitación con la precisión de un hotel de gama alta.
           </h1>
           <p className="text-[1.05rem] text-white/80 max-w-[560px] mb-10">

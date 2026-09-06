@@ -30,7 +30,7 @@ export function Process() {
         <p className="text-center uppercase tracking-[0.16em] text-[0.78rem] font-semibold text-[#A16207] mb-4">
           Proceso
         </p>
-        <h2 className="text-center font-[family-name:var(--font-display)] font-semibold text-[clamp(1.6rem,3vw,2.3rem)] mb-16">
+        <h2 className="text-center text-[#0C0A09] font-[family-name:var(--font-display)] font-semibold text-[clamp(1.6rem,3vw,2.3rem)] mb-16">
           De la primera visita a la habitación terminada
         </h2>
 
@@ -40,7 +40,7 @@ export function Process() {
               <span className="block font-[family-name:var(--font-display)] text-[2rem] font-semibold text-[#A16207] mb-1">
                 {s.number}
               </span>
-              <h3 className="text-[1.05rem] font-[family-name:var(--font-display)] font-semibold mb-1">{s.title}</h3>
+              <h3 className="text-[#0C0A09] text-[1.05rem] font-[family-name:var(--font-display)] font-semibold mb-1">{s.title}</h3>
               <p className="text-[0.9rem] text-[#57534E]">{s.body}</p>
             </Reveal>
           ))}

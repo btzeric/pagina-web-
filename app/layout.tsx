@@ -24,7 +24,18 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="es" className={`${cormorant.variable} ${montserrat.variable}`}>
-      <body className="min-h-screen bg-background text-foreground font-[family-name:var(--font-body)] antialiased">
+      {/*
+        Deliberately not bg-background/text-foreground here: those shadcn
+        tokens are set to a DARK palette (see globals.css) so the pasted
+        scroll-locked-video-hero component reads a correct dark host theme
+        via hsl(var(--background, ...)) on its own /experiencia page. This
+        marketing site is predominantly light, so its base text/background
+        are the brand's own light-mode colors instead — letting the body
+        default to the dark foreground caused headings with no explicit
+        color (inheriting text-foreground) to render near-invisible on
+        light section backgrounds.
+      */}
+      <body className="min-h-screen bg-[#FAFAF9] text-[#0C0A09] font-[family-name:var(--font-body)] antialiased">
         {children}
       </body>
     </html>

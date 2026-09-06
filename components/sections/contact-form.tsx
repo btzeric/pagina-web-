@@ -79,7 +79,7 @@ export function ContactForm() {
           <p className="uppercase tracking-[0.16em] text-[0.78rem] font-semibold text-[#A16207] mb-4">
             Hablemos de su proyecto
           </p>
-          <h2 className="font-[family-name:var(--font-display)] font-semibold text-[clamp(1.6rem,3vw,2.3rem)] mb-4">
+          <h2 className="text-[#0C0A09] font-[family-name:var(--font-display)] font-semibold text-[clamp(1.6rem,3vw,2.3rem)] mb-4">
             Cuéntenos cuántas habitaciones tiene su hotel
           </h2>
           <p className="text-[#57534E] max-w-[640px]">

@@ -31,7 +31,7 @@ export function WhyUs() {
         <p className="text-center uppercase tracking-[0.16em] text-[0.78rem] font-semibold text-[#E0B563] mb-4">
           Por qué nosotros
         </p>
-        <h2 className="text-center font-[family-name:var(--font-display)] font-semibold text-[clamp(1.6rem,3vw,2.3rem)] mb-16">
+        <h2 className="text-center text-white font-[family-name:var(--font-display)] font-semibold text-[clamp(1.6rem,3vw,2.3rem)] mb-16">
           Pensado para hoteles que no pueden darse el lujo de fallar
         </h2>
 
@@ -42,7 +42,7 @@ export function WhyUs() {
                 <span className="inline-flex items-center justify-center w-[52px] h-[52px] rounded-full bg-white/8 text-[#E0B563] mb-4">
                   <f.icon width={24} height={24} />
                 </span>
-                <h3 className="text-[1.1rem] font-[family-name:var(--font-display)] font-semibold mb-2">{f.title}</h3>
+                <h3 className="text-white text-[1.1rem] font-[family-name:var(--font-display)] font-semibold mb-2">{f.title}</h3>
                 <p className="text-[0.92rem] text-white/75">{f.body}</p>
               </div>
             </Reveal>
